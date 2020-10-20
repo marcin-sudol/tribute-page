@@ -1,0 +1,142 @@
+:root {
+  --color-light: #fffaf7;
+  --color-medium: #e8e2df;
+  --color-dark: #4a4745;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  background: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
+
+/* header */
+#header {
+  padding: 20px;
+}
+
+#title {
+  padding: 10px;
+  font-size: 70px;
+  font-family: "Cardo", serif;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+@media (max-width: 700px) {
+  #title {
+    font-size: 50px;
+  }
+}
+
+#header p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* image */
+#img-div {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  background: var(--color-medium);
+}
+
+#image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+#img-div p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* tribute info */
+#tribute-info {
+  margin: auto;
+  max-width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  #tribute-info {
+    flex-direction: column;
+  }
+}
+
+#tribute-info article {
+  margin: 30px 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+#tribute-info h4 {
+  padding: 10px;
+  font-family: "Cardo", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+#tribute-info h5 {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.tribute-list {
+  list-style: none;
+  font-size: 14px;
+}
+
+.tribute-list li {
+  padding: 5px;
+}
+
+.tribute-list li strong {
+  color: var(--color-dark);
+}
+
+#tribute-quote {
+  padding: 30px 5px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 500px;
+  border: 3px solid var(--color-medium);
+  font-style: italic;
+  flex-basis: 100%;
+}
+
+/* footer */
+#footer {
+  margin-bottom: 20px;
+}
+
+#footer p {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#footer a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
